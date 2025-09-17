@@ -1,20 +1,6 @@
 Part A. Data Collection [5 pt]
-
-    1. Model Building and Sanity Checking [15 pt]
-    Part (a) Convolutional Network - 5 pt
-    Build a convolutional neural network model that takes the (224x224 RGB) image as input, and predicts the letter. Your model should be a subclass of nn.Module. Explain your choice of neural network architecture: how many layers did you choose? What types of layers did you use? Were they fully-connected or convolutional? What about other decisions like pooling layers, activation functions, number of channels / hidden units?
-
-
-    Part (b) Training Code - 5 pt
-    Write code that trains your neural network given some training data. Your training code should make it easy to tweak the usual hyperparameters, like batch size, learning rate, and the model object itself. Make sure that you are checkpointing your models from time to time (the frequency is up to you). Explain your choice of loss function and optimizer.
-
-    Part (c) â€œOverfitâ€ to a Small Dataset - 5 pt
-    One way to sanity check our neural network model and training code is to check whether the model is capable of â€œoverfittingâ€ or â€œmemorizingâ€ a small dataset. A properly constructed CNN with correct training code should be able to memorize the answers to a small number of images quickly.
-
-    Construct a small dataset (e.g.Â just the images that you have collected). Then show that your model and training code is capable of memorizing the labels of this small data set.
-
-    With a large batch size (e.g.Â the entire small dataset) and learning rate that is not too high, You should be able to obtain a 100% training accuracy on that small dataset relatively quickly (within 200 iterations).
-
+    To collect the data, I decided to download an image database off of kaggle. The database contains letters A-Z, SPACE, DELETE, and NOTHING. There are 87,000 images in the 
+    database but I decided to trim it down to 8,700 to reduce the amount of time it takes to run the CNN. 
 
 Part B. Building a CNN [35 pt]
 
@@ -57,7 +43,7 @@ Part B. Building a CNN [35 pt]
             I trained the models with four different hyperparameter settings. I used differant learning rates and batch sizes for each model. The model uses 
             20 epochs are run with 6,700 images (10% of total image set)
             1. batch size = 16, learning rate = 1e-3: Final validation accuracy = 89.43%
-            2. batch size = 32, learning rate = 1e-3: Final validation accuracy = 85.86%
+            2. batch size = 32, learning rate = 1e-4: Final validation accuracy = 85.86%
             3. batch size = 16, learning rate = 1e-4: Final validation accuracy = 86.78%
             4. batch size = 32, learning rate = 1e-3: Final validation accuracy = 89.66%
 
@@ -66,5 +52,5 @@ Part B. Building a CNN [35 pt]
             Model number 4 with a batch size of 32 and a learning rate of 1e-3 preformed the best since it had the highest valudation accuracy.
         Part (d) - 2 pt
         Report the test accuracy of your best model. You should only do this step once.
-
+            The valudation accuracy of test 4 was 89.66%. This experiment shows that the learning rate had a noticable affect on accuracy while batch size did not seem to affect the accuracy much.
 Part C. Transfer Learning [15 pt]
