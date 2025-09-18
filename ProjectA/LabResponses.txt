@@ -42,10 +42,10 @@ Part B. Building a CNN [35 pt]
         Tune the hyperparameters you listed in Part (a), trying as many values as you need to until you feel satisfied that you are getting a good model. Plot the training curve of at least 4 different hyperparameter settings.
             I trained the models with four different hyperparameter settings. I used differant learning rates and batch sizes for each model. The model uses 
             20 epochs are run with 6,700 images (10% of total image set)
-            1. batch size = 16, learning rate = 1e-3: Final validation accuracy = 89.43%
-            2. batch size = 32, learning rate = 1e-4: Final validation accuracy = 85.86%
-            3. batch size = 16, learning rate = 1e-4: Final validation accuracy = 86.78%
-            4. batch size = 32, learning rate = 1e-3: Final validation accuracy = 89.66%
+            1. batch size = 16, learning rate = 1e-3: Final validation accuracy = 84.23%
+            2. batch size = 32, learning rate = 1e-4: Final validation accuracy = 81.86%
+            3. batch size = 16, learning rate = 1e-4: Final validation accuracy = 80.78%
+            4. batch size = 32, learning rate = 1e-3: Final validation accuracy = 84.31%
 
         Part (c) - 1 pt
         Choose the best model out of all the ones that you have trained. Justify your choice.
@@ -67,13 +67,13 @@ Part C. Transfer Learning [15 pt]
         My AlexNet model had 1 hidden fully connected layer and 1 output fully connected layer. The hidden layer consists of 512 units which is then mapped into the 29 classes by the output layer. A ReLu activation layer was also used.
 
     Part (c) - 5 pt
-T   rain your new network, including any hyperparameter tuning. Plot and submit the training curve of your best model only.
+Train your new network, including any hyperparameter tuning. Plot and submit the training curve of your best model only.
 
     Note: Depending on how you are caching (saving) your AlexNet features, PyTorch might still be tracking updates to the AlexNet weights, which we are not tuning. One workaround is to convert your AlexNet feature tensor into a numpy array, and then back into a PyTorch tensor.
 
     tensor = torch.from_numpy(tensor.detach().numpy())
     Part (d) - 2 pt
     Report the test accuracy of your best model. How does the test accuracy compare to part 4(d)?
-    My best model had a validation accuracy just under 90%. The AlexNet model was able to score 95% accuracy.
+    My best model had a validation accuracy just over 93%. The AlexNet model was able to score 95% accuracy.
 
 
