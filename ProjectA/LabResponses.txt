@@ -52,7 +52,7 @@ Part B. Building a CNN [35 pt]
             Model number 4 with a batch size of 32 and a learning rate of 1e-3 preformed the best since it had the highest valudation accuracy.
         Part (d) - 2 pt
         Report the test accuracy of your best model. You should only do this step once.
-            The valudation accuracy of test 4 was 89.66%. This experiment shows that the learning rate had a noticable affect on accuracy while batch size did not seem to affect the accuracy much.
+            The valudation accuracy of test 4 was 84.31%. This experiment shows that the learning rate had a noticable affect on accuracy while batch size did not seem to affect the accuracy much.
 -------------------------------------------------------------------------------------------------------------------
 Part C. Transfer Learning [15 pt]
 -------------------------------------------------------------------------------------------------------------------
@@ -74,6 +74,6 @@ Train your new network, including any hyperparameter tuning. Plot and submit the
     tensor = torch.from_numpy(tensor.detach().numpy())
     Part (d) - 2 pt
     Report the test accuracy of your best model. How does the test accuracy compare to part 4(d)?
-    My best model had a validation accuracy just over 93%. The AlexNet model was able to score 95% accuracy.
+    My best model had a validation accuracy just over 84%. The AlexNet model was able to score 92% accuracy.
 
 
