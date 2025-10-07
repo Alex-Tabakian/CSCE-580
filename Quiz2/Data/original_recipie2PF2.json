@@ -1,0 +1,262 @@
+{
+"recipe_name": "Vegetarian BBQ Tofu",
+"food_role": "main",
+"data_provenance": {
+"source_url": ""
+},
+"macronutrients": {
+"calories": null,
+"protein_g": null,
+"fat_g": null,
+"carbohydrates_g": null,
+"fiber_g": null,
+"sugar_g": null
+},
+"ingredients": [
+{
+"name": "Extra Firm Tofu",
+"quantity": {
+"measure": 2.0,
+"unit": "block"
+},
+"allergies": {
+"eggs": false,
+"dairy": false,
+"soy": true,
+"nuts": false,
+"shellfish": false
+}
+},
+{
+"name": "ketchup",
+"quantity": {
+"measure": 1.5,
+"unit": "cup"
+},
+"allergies": {
+"eggs": false,
+"dairy": false,
+"soy": false,
+"nuts": false,
+"shellfish": false
+}
+},
+{
+"name": "molasses",
+"quantity": {
+"measure": 0.5,
+"unit": "cup"
+},
+"allergies": {
+"eggs": false,
+"dairy": false,
+"soy": false,
+"nuts": false,
+"shellfish": false
+}
+},
+{
+"name": "lemon juice",
+"quantity": {
+"measure": 0.25,
+"unit": "cup"
+},
+"allergies": {
+"eggs": false,
+"dairy": false,
+"soy": false,
+"nuts": false,
+"shellfish": false
+}
+},
+{
+"name": "salt",
+"quantity": {
+"measure": null,
+"unit": null
+},
+"allergies": {
+"eggs": false,
+"dairy": false,
+"soy": false,
+"nuts": false,
+"shellfish": false
+}
+},
+{
+"name": "sugar",
+"quantity": {
+"measure": null,
+"unit": null
+},
+"allergies": {
+"eggs": false,
+"dairy": false,
+"soy": false,
+"nuts": false,
+"shellfish": false
+}
+},
+{
+"name": "sweet pepper (optional)",
+"quantity": {
+"measure": 1.0,
+"unit": "piece"
+},
+"allergies": {
+"eggs": false,
+"dairy": false,
+"soy": false,
+"nuts": false,
+"shellfish": false
+}
+},
+{
+"name": "scallions (optional)",
+"quantity": {
+"measure": 2.0,
+"unit": "piece"
+},
+"allergies": {
+"eggs": false,
+"dairy": false,
+"soy": false,
+"nuts": false,
+"shellfish": false
+}
+}
+],
+"hasDairy": false,
+"hasMeat": false,
+"hasNuts": false,
+"prep_time": null,
+"cook_time_minutes": 22.0,
+"serves": null,
+"instructions": [
+{
+"original_text": "Open and drain the tofu.",
+"decomposition": [
+"Open the tofu packages.",
+"Drain off excess liquid from the tofu packages."
+]
+},
+{
+"original_text": "You can dry out the tofu by blotting it in a napkin just to get all the water that you can out.",
+"decomposition": [
+"Wrap or blot tofu pieces with paper towels or a napkin.",
+"Press or blot to absorb as much water as possible."
+]
+},
+{
+"original_text": "Cube the tofu and lay on an oven safe tray.",
+"decomposition": [
+"Cut the tofu into cubes.",
+"Arrange the tofu cubes in a single layer on an oven-safe tray."
+]
+},
+{
+"original_text": "Turn on the broil setting on your oven to high.",
+"decomposition": [
+"Set the oven to the broil setting on high."
+]
+},
+{
+"original_text": "Broil the tofu until it is dry and lightly toasted, about 20 mins.",
+"decomposition": [
+"Place the tray of tofu under the broiler.",
+"Broil and monitor tofu until it is dry and lightly toasted, about 20.0 minutes total (turn frequently for even browning)."
+]
+},
+{
+"original_text": "Make sure you keep turning it so that it is evenly browned.",
+"decomposition": [
+"Use tongs or a spatula to turn tofu pieces periodically while broiling.",
+"Ensure pieces brown evenly on all sides."
+]
+},
+{
+"original_text": "Using your measuring cup, measure 1 1/2 cup of ketchup and pour into a bowl.",
+"decomposition": [
+"Measure 1.5 cup of ketchup with a measuring cup.",
+"Pour the measured ketchup into a mixing bowl."
+]
+},
+{
+"original_text": "Next measure 1/2 cup of molasses and add to the ketchup.",
+"decomposition": [
+"Measure 0.5 cup of molasses.",
+"Add the molasses to the bowl with ketchup."
+]
+},
+{
+"original_text": "Now, squeeze your lemon and you should get 1/4 cup of juice.",
+"decomposition": [
+"Roll and cut lemon(s) as needed.",
+"Squeeze lemon(s) to obtain 0.25 cup of lemon juice."
+]
+},
+{
+"original_text": "Now mix that all up.",
+"decomposition": [
+"Stir the ketchup, molasses, and lemon juice together until combined."
+]
+},
+{
+"original_text": "Now pour that mixture into your pot and cook for about 2 mins on med heat.",
+"decomposition": [
+"Pour the combined sauce mixture into a pot.",
+"Heat the pot over medium heat.",
+"Cook the sauce for about 2.0 minutes while stirring occasionally."
+]
+},
+{
+"original_text": "Add your salt and sugar to taste (I added mine before I cooked it but it seems to dissolve better if you put in when the sauce is warm).",
+"decomposition": [
+"Measure and add salt to the sauce to taste.",
+"Measure and add sugar to the sauce to taste.",
+"Stir until salt and sugar dissolve in the warm sauce."
+]
+},
+{
+"original_text": "When tofu is finished, you can either put the tofu in the pot and mix or you can pour the sauce over the tofu.",
+"decomposition": [
+"Decide whether to combine tofu and sauce in the pot or to pour sauce over tofu on the tray.",
+"If combining in the pot, transfer broiled tofu to the pot with sauce.",
+"If pouring, arrange tofu in a bowl or tray and pour hot sauce evenly over the tofu pieces."
+]
+},
+{
+"original_text": "Mix well, making sure that the tofu is entirely covered.",
+"decomposition": [
+"Toss or stir tofu and sauce together until all tofu pieces are well coated."
+]
+},
+{
+"original_text": "If you want to do the flower: take a sweet pepper and cut petals without cutting all the way through; bend the petals out and down to expose the center.",
+"decomposition": [
+"Wash a sweet pepper.",
+"Hold the pepper upside down (stem down).",
+"Use a paring knife to cut petal shapes into the pepper without cutting all the way through.",
+"Carefully bend the cut petals outward and downward to reveal the center and seeds."
+]
+},
+{
+"original_text": "For the leaves: wash scallions, open them without cutting through, slice into long thin strips so they curl, and arrange the flower and leaves decoratively.",
+"decomposition": [
+"Wash the scallions thoroughly.",
+"Lay a scallion flat and slice only the top layer lengthwise without cutting through the bottom.",
+"Open the scallion to make it flat.",
+"Slice the opened scallion into long thin strips on the longest side.",
+"Allow scallion strips to curl naturally or gently encourage curling.",
+"Arrange the pepper petals and scallion strips as a decorative flower and leaves on the plated tofu."
+]
+},
+{
+"original_text": "You are done! ENJOY!",
+"decomposition": [
+"Serve the BBQ tofu warm.",
+"Enjoy."
+]
+}
+]
+}

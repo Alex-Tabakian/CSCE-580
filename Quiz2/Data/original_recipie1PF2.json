@@ -1,0 +1,260 @@
+{
+"recipe_name": "Gluten and Dairy Free Flatbread",
+"food_role": "flatbread",
+"data_provenance": {
+"source_url": "https://www.instructables.com/Gluten-and-Dairy-Free-Flatbread/"
+},
+"macronutrients": {
+"calories": null,
+"protein_g": null,
+"fat_g": null,
+"carbohydrates_g": null,
+"fiber_g": null,
+"sugar_g": null
+},
+"ingredients": [
+{
+"name": "water",
+"quantity": {
+"measure": 1.0,
+"unit": "cup"
+},
+"allergies": {
+"eggs": false,
+"dairy": false,
+"soy": false,
+"nuts": false,
+"shellfish": false
+}
+},
+{
+"name": "garbanzo bean flour (chickpea flour)",
+"quantity": {
+"measure": 2.5,
+"unit": "cup"
+},
+"allergies": {
+"eggs": false,
+"dairy": false,
+"soy": false,
+"nuts": false,
+"shellfish": false
+}
+},
+{
+"name": "tapioca starch",
+"quantity": {
+"measure": 0.75,
+"unit": "cup"
+},
+"allergies": {
+"eggs": false,
+"dairy": false,
+"soy": false,
+"nuts": false,
+"shellfish": false
+}
+},
+{
+"name": "oil (for cooking and brushing)",
+"quantity": {
+"measure": null,
+"unit": null
+},
+"allergies": {
+"eggs": false,
+"dairy": false,
+"soy": false,
+"nuts": false,
+"shellfish": false
+}
+},
+{
+"name": "salt",
+"quantity": {
+"measure": null,
+"unit": null
+},
+"allergies": {
+"eggs": false,
+"dairy": false,
+"soy": false,
+"nuts": false,
+"shellfish": false
+}
+}
+],
+"hasDairy": false,
+"hasMeat": false,
+"hasNuts": false,
+"prep_time": null,
+"cook_time": null,
+"serves": 6,
+"instructions": [
+{
+"original_text": "Mix all the dry ingredients except the salt, then add half the water.",
+"decomposition": [
+"Measure garbanzo bean flour and tapioca starch.",
+"Combine the garbanzo bean flour and tapioca starch in a bowl (do not add salt yet).",
+"Measure the water.",
+"Add half of the measured water to the dry ingredients."
+]
+},
+{
+"original_text": "Stir it with chopsticks, if you have them.",
+"decomposition": [
+"Use chopsticks (or another utensil) to stir the mixture."
+]
+},
+{
+"original_text": "This is to help make it light and flakey.",
+"decomposition": [
+"Allow the stirring method to help incorporate air and contribute to a light, flaky texture."
+]
+},
+{
+"original_text": "Wait a few minutes, and then add the rest of the water.",
+"decomposition": [
+"Let the mixture rest for a few minutes.",
+"Add the remaining water to the dough after resting."
+]
+},
+{
+"original_text": "If it is too sticky, add more garbanzo bean flour.",
+"decomposition": [
+"Check the dough texture for stickiness.",
+"If the dough is too sticky, gradually add more garbanzo bean flour until it is slightly sticky and a bit softer than playdough."
+]
+},
+{
+"original_text": "Before you start, get a little bowl of salt, a bowl of oil and a brush, and some starch for the counter.",
+"decomposition": [
+"Prepare a small bowl of salt.",
+"Prepare a bowl of oil and a brush for applying oil.",
+"Put additional tapioca starch nearby for dusting the counter."
+]
+},
+{
+"original_text": "Dust the counter and your rolling pin with Tapioca starch and pinch off about a sixth of the dough.",
+"decomposition": [
+"Dust the work surface with tapioca starch.",
+"Dust the rolling pin with tapioca starch.",
+"Pinch off approximately one sixth of the dough."
+]
+},
+{
+"original_text": "Roll it out to about 1/4 inch thick, then brush it with oil and sprinkle it with a little salt.",
+"decomposition": [
+"Roll the pinched-off dough to about 1/4 inch thickness.",
+"Brush the rolled dough lightly with oil.",
+"Sprinkle a small amount of salt on the oiled dough."
+]
+},
+{
+"original_text": "Now roll it up like a taco, and then like a snail.",
+"decomposition": [
+"Roll the oiled and salted dough up like a taco.",
+"Coil the rolled dough into a spiral shape like a snail."
+]
+},
+{
+"original_text": "It should be a ball the same size as you started with.",
+"decomposition": [
+"Ensure the coiled dough forms a ball roughly the same size as the original piece."
+]
+},
+{
+"original_text": "Put some more starch on the counter and roll it to 1/4 inch again.",
+"decomposition": [
+"Dust the counter with more tapioca starch.",
+"Roll the coiled dough out again to about 1/4 inch thickness."
+]
+},
+{
+"original_text": "Put it on a sheet of plastic wrap, then do the rest of them the same.",
+"decomposition": [
+"Place the rolled flatbread onto a sheet of plastic wrap.",
+"Repeat the divide-roll-brush-salt-roll-coil-roll process for the remaining dough pieces."
+]
+},
+{
+"original_text": "Pour about 1/8 inch of oil into a pan and heat it up.",
+"decomposition": [
+"Pour oil into a frying pan to a depth of about 1/8 inch.",
+"Heat the pan with oil until it is hot enough for frying."
+]
+},
+{
+"original_text": "Then carefuly place a flat bread in the oil.",
+"decomposition": [
+"Carefully place one rolled flatbread into the hot oil."
+]
+},
+{
+"original_text": "Cook it for a few minutes, then very carefully turn it over.",
+"decomposition": [
+"Fry the flatbread on the first side for a few minutes until it begins to color.",
+"Use tongs to carefully flip the flatbread to the other side."
+]
+},
+{
+"original_text": "It will be slightly dark golden when it is done.",
+"decomposition": [
+"Continue cooking until the flatbread is a slightly dark golden color on both sides."
+]
+},
+{
+"original_text": "Be very, very careful not to burn it, because it smells terrible when burned.",
+"decomposition": [
+"Monitor the flatbread closely to avoid burning it."
+]
+},
+{
+"original_text": "If you doubled the recipie, you should change or strain the oil in the middle, because other wise the burned starch starts to make the bread taste bad.",
+"decomposition": [
+"If cooking a doubled batch, change or strain the oil halfway through cooking.",
+"Remove burned bits from the oil to prevent off flavors."
+]
+},
+{
+"original_text": "Put the finished flatbreads on a paper towel to drain the oil off.",
+"decomposition": [
+"Remove cooked flatbreads from the pan.",
+"Place them on paper towels to drain excess oil."
+]
+},
+{
+"original_text": "Eat it with whatever topping you like while it is still warm, and you can put the leftovers in the fridge.",
+"decomposition": [
+"Serve the flatbreads warm with desired toppings.",
+"Store leftovers in the refrigerator."
+]
+},
+{
+"original_text": "The leftovers can be tosted or microwaved.",
+"decomposition": [
+"Reheat leftovers by toasting or microwaving them."
+]
+},
+{
+"original_text": "The topping in the picture is ground lamb, onions and swiss chard.",
+"decomposition": [
+"Consider savory toppings such as ground lamb, onions, and Swiss chard."
+]
+},
+{
+"original_text": "Another good topping is lamb, coconut yogurt, onions and tamarind paste.",
+"decomposition": [
+"Consider alternative toppings such as lamb with coconut yogurt, onions, and tamarind paste."
+]
+},
+{
+"original_text": "You can also use them for sandwiches or tostados, they go quite good with any savory food, but not with sweet things, and they taste a bit beany by themselves.",
+"decomposition": [
+"Use flatbreads for sandwiches or tostadas with savory fillings.",
+"Avoid pairing them with sweet toppings according to the author.",
+"Note that the flatbreads may have a beany flavor when eaten plain."
+]
+}
+]
+}

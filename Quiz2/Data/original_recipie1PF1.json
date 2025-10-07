@@ -1,0 +1,128 @@
+{
+"recipe_name": "Gluten and Dairy Free Flatbread",
+"food_role": "flatbread",
+"data_provenance": {
+"source_url": "https://www.instructables.com/Gluten-and-Dairy-Free-Flatbread/",
+"last_system_access": "2025-10-07T00:00:00Z"
+},
+"macronutrients": {
+"calories": null,
+"protein_g": null,
+"fat_g": null,
+"carbohydrates_g": null,
+"fiber_g": null,
+"sugar_g": null
+},
+"ingredients": [
+{
+"name": "water",
+"quantity": {
+"measure": 1,
+"unit": "cup"
+},
+"allergies": {
+"contains": [],
+"notes": ""
+}
+},
+{
+"name": "garbanzo bean flour (chickpea flour)",
+"quantity": {
+"measure": 2.5,
+"unit": "cups"
+},
+"allergies": {
+"contains": [
+"legume"
+],
+"notes": "Made from chickpeas/garbanzo beans"
+}
+},
+{
+"name": "tapioca starch",
+"quantity": {
+"measure": 0.75,
+"unit": "cup"
+},
+"allergies": {
+"contains": [],
+"notes": ""
+}
+},
+{
+"name": "oil (for cooking and brushing)",
+"quantity": {
+"measure": null,
+"unit": null
+},
+"allergies": {
+"contains": [],
+"notes": "Quantity unspecified; used for cooking and brushing"
+}
+},
+{
+"name": "salt",
+"quantity": {
+"measure": null,
+"unit": null
+},
+"allergies": {
+"contains": [],
+"notes": "Amount to taste"
+}
+}
+],
+"hasDairy": false,
+"hasMeat": false,
+"hasNuts": false,
+"prep_time": null,
+"cook_time": null,
+"serves": 6,
+"instructions": [
+{
+"original_text": "Mix all the dry ingredients except the salt, then add half the water. Stir it with chopsticks, if you have them. This is to help make it light and flakey. Wait a few minutes, and then add the rest of the water.\n\nIf it is too sticky, add more garbanzo bean flour. It should be just a little sticky, and a little softer than playdough.",
+"decomposition": [
+"Measure and combine all dry ingredients except the salt (garbanzo bean flour and tapioca starch).",
+"Add half of the water to the dry ingredients.",
+"Stir the mixture (author suggests using chopsticks) to begin hydrating and to encourage a light, flaky texture.",
+"Let the dough rest for a few minutes.",
+"Add the remaining water and mix until dough comes together.",
+"Adjust texture: if too sticky, add more garbanzo bean flour until dough is slightly sticky and slightly softer than playdough."
+]
+},
+{
+"original_text": "Before you start, get a little bowl of salt, a bowl of oil and a brush, and some starch for the counter.\n\nDust the counter and your rolling pin with Tapioca starch and pinch off about a sixth of the dough. Roll it out to about 1/4 inch thick, then brush it with oil and sprinkle it with a little salt.\n\nNow roll it up like a taco, and then like a snail. It should be a ball the same size as you started with. Put some more starch on the counter and roll it to 1/4 inch again. put it on a sheet of plastic wrap, then do the rest of them the same.",
+"decomposition": [
+"Prepare work station: small bowl of salt, bowl of oil with a brush, and additional tapioca starch for dusting.",
+"Dust counter and rolling pin with tapioca starch.",
+"Divide dough into six equal pieces (about a sixth each).",
+"Take one piece and roll it to about 1/4 inch thickness.",
+"Brush the rolled dough with oil and sprinkle lightly with salt.",
+"Roll the dough up like a taco, then coil it like a snail to form a ball.",
+"Dust counter again and roll the coiled ball out to about 1/4 inch thickness.",
+"Place the rolled flatbread on plastic wrap and repeat with remaining dough pieces."
+]
+},
+{
+"original_text": "Pour about 1/8 inch of oil into a pan and heat it up. Then carefuly place a flat bread in the oil. cook it for a few minutes, then very carefully turn it over. Tongs work best for this.\n\nIt will be slightly dark golden when it is done. Be very, very careful not to burn it, because it smells terrible when burned.\n\nIf you doubled the recipie, you should change or strain the oil in the middle, because other wise the burned starch starts to make the bread taste bad.\n\nPut the finished flatbreads on a paper towel to drain the oil off.\n\nEat it with whatever topping you like while it is still warm, and you can put the leftovers in the fridge.\n\nThe leftovers can be tosted or microwaved.",
+"decomposition": [
+"Pour approximately 1/8 inch of oil into a pan and heat until ready for frying.",
+"Carefully place a rolled flatbread into the hot oil.",
+"Cook for a few minutes on the first side until it begins to color, then carefully flip (tongs recommended) and cook the other side until slightly dark golden.",
+"Avoid burning; burned flatbread produces an unpleasant smell and taste.",
+"If using the same oil for many pieces or a doubled recipe, change or strain the oil halfway through to remove burned starch.",
+"Remove cooked flatbreads and drain on paper towel to remove excess oil.",
+"Serve warm with desired toppings; refrigerate leftovers.",
+"Reheat leftovers by toasting or microwaving."
+]
+},
+{
+"original_text": "The topping in the picture is ground lamb, onions and swiss chard.\n\nAnother good topping is lamb, coconut yogurt, onions and tamarind paste.\n\nyou can also use them for sandwiches or tostados, they go quite good with any savory food, but not with sweet things, and they taste a bit beany by themselves.",
+"decomposition": [
+"Top warm flatbreads with savory toppings such as ground lamb, onions, and swiss chard.",
+"Alternative topping suggestion: lamb with coconut yogurt, onions, and tamarind paste.",
+"Use flatbreads for sandwiches or tostadas with savory fillings; avoid sweet toppings according to author notes."
+]
+}
+]
+}

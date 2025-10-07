@@ -1,4 +1,4 @@
-Explore any three different tool settings with AI (LLM based) and classical method. Record the two tool
+1) Explore any three different tool settings with AI (LLM based) and classical method. Record the two tool
 alternatives in each setting and the energy difference. [6 points]
 
 Translation:
@@ -16,3 +16,73 @@ b) Question: what is the average energy difference across the three settings you
 
 LLM is higher on average by 2.2 Wh / (Session or query)
 
+Q2 b)a)
+
+1. TC-identifier:
+TC-R3-Conv-01
+
+2. TC-name:
+Convert two web recipes into R3 JSON format using multiple prompting strategies
+
+3. TC-objective:
+Evaluate an LLM/chatbot’s ability to convert recipe text from web pages into the R3 JSON schema (robotic recipe format). Measure (a) fidelity to original recipe (ingredients, quantities, units, instructions), (b) structured metadata quality (data_provenance, allergies flags, macronutrients stub), (c) instruction decomposition into single-task sentences, (d) robustness across prompting strategies (PF1..PF3, PP-1/PP-2), and (e) reproducibility of outputs across runs.
+
+4. TC-input:
+Two recipe web pages (original recipe texts saved to files):
+
+Recipe A: Lemony Garlic Shrimp with Pasta — original saved to ./data/original_recipie1.txt. Source: Instructables
+
+Recipe B: Best Chocolate Chip Cookies — original saved to ./data/original_recipie2.txt. Source: Instructables
+
+5. TC-reference-output:
+For each recipe produce the following outputs (files):
+
+./output/recipeA_PF1.json — full R3 produced using Prompt-Full 1 (PF1)
+
+./output/recipeA_PF2.json — full R3 produced using Prompt-Full 2 (PF2)
+
+./output/recipeA_PF3.json — full R3 produced using Prompt-Full 3 (PF3)
+
+./output/recipeA_PPcombined.json — combined R3 from partial-prompt approach (PP-1 + PP-2 stitched by Python)
+
+same four outputs for recipe B (recipeB_PF1.json, etc.) — total 8 .json files
+
+6. TC-harm-risk-info:
+Risk categories: HC1 (incorrect-info): LLM may hallucinate ingredient quantities or cooking times. HC3 (unstable-output): small prompt changes may yield inconsistent JSON structures. HC5 (others): minor privacy risk if scraped web text includes user comments; but we only use recipe body.
+
+7. TC-other-info:
+Detailed step-by-step plan and prompts to run the experiment
+
+b) ii)
+PF1: PROMPT: Convert the following recipe EXACTLY into the R3 JSON schema shown in the sample. Do not invent or remove ingredients. Use the following keys: recipe_name, food_role, data_provenance, macronutrients, ingredients (with name, quantity.measure, quantity.unit, allergies object), hasDairy, hasMeat, hasNuts, prep_time, cook_time, serves, instructions (array with original_text and decomposition). Put the source URL in data_provenance.source_url and today's timestamp in last_system_access. Output only valid JSON.
+[PASTE FULL CLEANED RECIPE TEXT HERE]
+
+PF2: PROMPT: Convert this recipe into R3 JSON. Normalize quantities to decimal numbers (e.g., 1 1/2 → 1.5). Standardize unit names (cup, tbsp, tsp, oz, g, lb). Decompose each instruction sentence into single-task steps. For each ingredient, attempt to flag common allergens (eggs, dairy, soy, nuts, shellfish) in the allergies object; if uncertain leave allergies fields empty. Output only JSON.
+[PASTE CLEANED RECIPE TEXT]
+
+PF3: PROMPT: Produce an R3 JSON where instructions are rewritten into short imperative single-task sentences suitable for a robot cook. Keep ingredient names simple (no parentheticals). If a quantity is missing, set quantity.measure="" and add "estimated": true to that ingredient. Provide an image placeholder path for each ingredient using ./images/<slug>/ingredients/<name>.jpeg. Output only JSON.
+[PASTE CLEANED RECIPE TEXT]
+
+iii)
+PP-1: PROMPT: From the recipe text below, extract only the ingredients list into JSON array of objects with keys: name, quantity.measure (decimal), quantity.unit. Do not produce any other keys. If a quantity cannot be found, put measure="" and unit="". Normalize fractions to decimals.
+[PASTE CLEANED RECIPE TEXT]
+
+PP-2: PROMPT: From the same recipe text, extract metadata and instructions. Produce a JSON object with keys: recipe_name (slug), prep_time, cook_time, serves, instructions (array of original_text statements). Do not include ingredients. Keep instructions as sentences; do not decompress into tasks.
+[PASTE CLEANED RECIPE TEXT]
+
+Q1.For both Gluten and Dairy Free Flatbread and Vegetarian BBQ Tofu, the full conversion (PF1) approach performed best.
+
+Q2.
+Gluten Free Flatbread - PF1 - Highest Score = 100
+Vegetarian BBQ Tofu - PF1 - Highest Score = 100
+
+Q3.es. I tried a “Schema-Locked Compact Prompt”, which instructed the model:
+
+“Produce a valid JSON with exactly the five top-level keys required in the R3 format. If data is missing, set value to null.”
+
+This prompt scored 100/100 on both recipes.
+
+Q4.Prompt	Avg Schema Coverage	Avg JSON Validity	Avg Goodness Score
+PF1	100%	100%	100
+PF2	96%	    100%	98
+PF3	80%	    92%	    86

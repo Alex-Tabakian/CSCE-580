@@ -1,0 +1,91 @@
+{
+"recipe_name": "Vegetarian BBQ Tofu",
+"food_role": "main",
+"data_provenance": {
+"source_url": "https://www.instructables.com/Vegetarian-BBQ-Tofu/"
+},
+"ingredients": [
+{
+"name": "tofu",
+"quantity": { "measure": 2.0, "unit": "block" },
+"estimated": false,
+"image": "./images/vegetarian-bbq-tofu/ingredients/tofu.jpeg"
+},
+{
+"name": "ketchup",
+"quantity": { "measure": 1.5, "unit": "cup" },
+"estimated": false,
+"image": "./images/vegetarian-bbq-tofu/ingredients/ketchup.jpeg"
+},
+{
+"name": "molasses",
+"quantity": { "measure": 0.5, "unit": "cup" },
+"estimated": false,
+"image": "./images/vegetarian-bbq-tofu/ingredients/molasses.jpeg"
+},
+{
+"name": "lemon juice",
+"quantity": { "measure": 0.25, "unit": "cup" },
+"estimated": false,
+"image": "./images/vegetarian-bbq-tofu/ingredients/lemon-juice.jpeg"
+},
+{
+"name": "salt",
+"quantity": { "measure": "", "unit": "" },
+"estimated": true,
+"image": "./images/vegetarian-bbq-tofu/ingredients/salt.jpeg"
+},
+{
+"name": "sugar",
+"quantity": { "measure": "", "unit": "" },
+"estimated": true,
+"image": "./images/vegetarian-bbq-tofu/ingredients/sugar.jpeg"
+},
+{
+"name": "sweet pepper",
+"quantity": { "measure": 1.0, "unit": "piece" },
+"estimated": false,
+"image": "./images/vegetarian-bbq-tofu/ingredients/sweet-pepper.jpeg"
+},
+{
+"name": "scallions",
+"quantity": { "measure": 2.0, "unit": "piece" },
+"estimated": false,
+"image": "./images/vegetarian-bbq-tofu/ingredients/scallions.jpeg"
+}
+],
+"instructions": [
+"Open tofu packages.",
+"Drain liquid from tofu.",
+"Blot tofu with napkin to remove excess moisture.",
+"Cut tofu into cubes.",
+"Place tofu cubes on oven-safe tray.",
+"Set oven to broil on high.",
+"Broil tofu until dry and lightly toasted, about 20 minutes.",
+"Turn tofu pieces periodically for even browning.",
+"Measure ketchup into bowl.",
+"Measure molasses and add to ketchup.",
+"Squeeze lemons to yield lemon juice.",
+"Add lemon juice to ketchup and molasses mixture.",
+"Stir sauce mixture until combined.",
+"Pour sauce mixture into pot.",
+"Heat pot over medium heat for 2 minutes.",
+"Add salt to sauce to taste.",
+"Add sugar to sauce to taste.",
+"Stir sauce until salt and sugar dissolve.",
+"Remove pot from heat.",
+"Transfer cooked tofu to pot with sauce or pour sauce over tofu.",
+"Mix tofu and sauce until tofu is evenly coated.",
+"Wash sweet pepper.",
+"Hold pepper upside down with stem on bottom.",
+"Cut petals into pepper without cutting through base.",
+"Bend pepper petals outward to expose center.",
+"Wash scallions.",
+"Lay scallions flat and cut only top layer lengthwise.",
+"Slice scallions into thin long strips.",
+"Allow scallion strips to curl naturally.",
+"Arrange pepper flower and scallion leaves for decoration.",
+"Serve BBQ tofu warm.",
+"Enjoy the dish."
+]
+}

@@ -1,0 +1,71 @@
+{
+"recipe_name": "Gluten and Dairy Free Flatbread",
+"food_role": "flatbread",
+"data_provenance": {
+"source_url": "https://www.instructables.com/Gluten-and-Dairy-Free-Flatbread/"
+},
+"ingredients": [
+{
+"name": "water",
+"quantity": { "measure": 1.0, "unit": "cup" },
+"estimated": false,
+"image": "./images/gluten-and-dairy-free-flatbread/ingredients/water.jpeg"
+},
+{
+"name": "garbanzo bean flour",
+"quantity": { "measure": 2.5, "unit": "cup" },
+"estimated": false,
+"image": "./images/gluten-and-dairy-free-flatbread/ingredients/garbanzo-bean-flour.jpeg"
+},
+{
+"name": "tapioca starch",
+"quantity": { "measure": 0.75, "unit": "cup" },
+"estimated": false,
+"image": "./images/gluten-and-dairy-free-flatbread/ingredients/tapioca-starch.jpeg"
+},
+{
+"name": "oil",
+"quantity": { "measure": "", "unit": "" },
+"estimated": true,
+"image": "./images/gluten-and-dairy-free-flatbread/ingredients/oil.jpeg"
+},
+{
+"name": "salt",
+"quantity": { "measure": "", "unit": "" },
+"estimated": true,
+"image": "./images/gluten-and-dairy-free-flatbread/ingredients/salt.jpeg"
+}
+],
+"instructions": [
+"Combine garbanzo bean flour and tapioca starch in a bowl.",
+"Add half of the water to the dry ingredients.",
+"Stir mixture using chopsticks.",
+"Let dough rest for a few minutes.",
+"Add remaining water to the dough.",
+"If dough is sticky, add more garbanzo bean flour.",
+"Prepare a small bowl of salt.",
+"Prepare a bowl of oil and a brush.",
+"Dust counter and rolling pin with tapioca starch.",
+"Divide dough into six equal portions.",
+"Roll one portion of dough to 0.25 inch thickness.",
+"Brush rolled dough with oil.",
+"Sprinkle a small amount of salt on top.",
+"Roll the dough like a taco.",
+"Coil the rolled dough like a snail.",
+"Roll the coiled dough again to 0.25 inch thickness.",
+"Place flattened dough on plastic wrap.",
+"Repeat rolling process for remaining portions.",
+"Pour oil into a pan until it reaches about 0.125 inch depth.",
+"Heat oil in pan.",
+"Place one flatbread into hot oil.",
+"Cook flatbread for a few minutes until golden on one side.",
+"Turn flatbread carefully with tongs.",
+"Cook until both sides are dark golden.",
+"Remove flatbread from pan.",
+"Place cooked flatbread on paper towel to drain oil.",
+"Repeat frying with remaining dough pieces.",
+"Serve warm with desired toppings.",
+"Store leftovers in refrigerator.",
+"Reheat leftovers by toasting or microwaving."
+]
+}

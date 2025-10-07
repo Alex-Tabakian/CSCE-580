@@ -1,0 +1,37 @@
+[
+{
+"name": "water",
+"quantity": {
+"measure": 1.0,
+"unit": "cup"
+}
+},
+{
+"name": "garbanzo bean flour",
+"quantity": {
+"measure": 2.5,
+"unit": "cup"
+}
+},
+{
+"name": "tapioca starch",
+"quantity": {
+"measure": 0.75,
+"unit": "cup"
+}
+},
+{
+"name": "oil",
+"quantity": {
+"measure": "",
+"unit": ""
+}
+},
+{
+"name": "salt",
+"quantity": {
+"measure": "",
+"unit": ""
+}
+}
+]

@@ -1,0 +1,157 @@
+{
+"recipe_name": "Vegetarian BBQ Tofu",
+"food_role": "main / protein",
+"data_provenance": {
+"source_url": "https://www.instructables.com/Vegetarian-BBQ-Tofu/",
+"last_system_access": "2025-10-07T00:00:00Z"
+},
+"macronutrients": {
+"calories": null,
+"protein_g": null,
+"fat_g": null,
+"carbohydrates_g": null,
+"fiber_g": null,
+"sugar_g": null
+},
+"ingredients": [
+{
+"name": "Extra Firm Tofu",
+"quantity": {
+"measure": 2,
+"unit": "blocks"
+},
+"allergies": {
+"contains": [
+"soy"
+],
+"notes": "Tofu is made from soybeans"
+}
+},
+{
+"name": "ketchup",
+"quantity": {
+"measure": 1.5,
+"unit": "cup"
+},
+"allergies": {
+"contains": [],
+"notes": ""
+}
+},
+{
+"name": "molasses",
+"quantity": {
+"measure": 0.5,
+"unit": "cup"
+},
+"allergies": {
+"contains": [],
+"notes": "Blackstrap molasses suggested"
+}
+},
+{
+"name": "lemon juice (or lemon)",
+"quantity": {
+"measure": 0.25,
+"unit": "cup"
+},
+"allergies": {
+"contains": [],
+"notes": "Author: squeeze about one lemon to yield ~1/4 cup"
+}
+},
+{
+"name": "salt",
+"quantity": {
+"measure": null,
+"unit": null
+},
+"allergies": {
+"contains": [],
+"notes": "Add to taste"
+}
+},
+{
+"name": "sugar",
+"quantity": {
+"measure": null,
+"unit": null
+},
+"allergies": {
+"contains": [],
+"notes": "Add to taste"
+}
+},
+{
+"name": "sweet pepper (optional)",
+"quantity": {
+"measure": 1,
+"unit": "piece"
+},
+"allergies": {
+"contains": [],
+"notes": "Optional: used for decorative flower"
+}
+},
+{
+"name": "scallions (optional)",
+"quantity": {
+"measure": 2,
+"unit": "pieces"
+},
+"allergies": {
+"contains": [],
+"notes": "Optional: used for decorative leaves"
+}
+}
+],
+"hasDairy": false,
+"hasMeat": false,
+"hasNuts": false,
+"prep_time": null,
+"cook_time": "About 20 minutes (broil tofu) + about 2 minutes (sauce)",
+"serves": null,
+"instructions": [
+{
+"original_text": "Open and drain the tofu. You can dry out the tofu by blotting it in a napkin just to get all the water that you can out. Cube the tofu and lay on a oven safe tray. Now, turn on the broil setting on your oven to high ( I have an electric oven I now that it makes a difference if you have gas). Broil the tofu until it is dry and lightly toasted, about 20 mins. Make sure you keep turning it so that it is evenly browned.",
+"decomposition": [
+"Open the tofu packages and drain off excess water.",
+"Blot tofu with a napkin to remove as much water as possible.",
+"Cube the tofu into bite-sized pieces.",
+"Arrange tofu cubes on an oven-safe tray in a single layer.",
+"Set the oven to broil on high (note: author uses an electric oven).",
+"Broil the tofu until dry and lightly toasted, about 20 minutes, turning periodically so pieces brown evenly."
+]
+},
+{
+"original_text": "Using your measuring cup, measure 1 1/2 cup of ketchup and pour into a bowl. Next meausure 1/2 cup of molasess, i used Black strap, and add to the ketchup. Now, squeeze your lemon and you should get 1/4 cup of juice. I used only one lemon, but use how ever many you need. Now mix that all up. Now pour that mixture into your pot and cook for about 2 mins on med heat. Add your salt and sugar to taste( I added mine before I cooked it but it seems to disolve better if you put in when the sauce is warm).",
+"decomposition": [
+"Measure 1 1/2 cups ketchup into a bowl.",
+"Measure 1/2 cup molasses (blackstrap suggested) and add to the ketchup.",
+"Squeeze lemons to obtain about 1/4 cup lemon juice (use as many lemons as needed).",
+"Stir the ketchup, molasses, and lemon juice together until combined.",
+"Pour the mixture into a pot and heat on medium for about 2 minutes.",
+"Season with salt and sugar to taste; author notes sugar/salt dissolve better when added while sauce is warm."
+]
+},
+{
+"original_text": "We are almost finished! Your tofu should be finished now, so, you can either pur the tofu in the put and mix or you can puor the sauce over the tofu! Mix well, making sure that the tofu is entirely covered.",
+"decomposition": [
+"When tofu is broiled and sauce is ready, combine them.",
+"Either add the tofu into the pot with the sauce and mix, or pour the sauce over the tofu on the tray.",
+"Toss or stir so all tofu pieces are well coated with sauce."
+]
+},
+{
+"original_text": "If you want to do the flower:\n\nTake a sweet pepper, and hold it upside down so that the stem is on the bottom. With a pearing knife cut how ever many petals you want. Make sure that you dont cut all the way down or else your petals will break ( I learned this the hard way:/)\nNow carefully bend the petals out and down, so that you expose the middle( seeds).\nThe leaves:\nFor the leaves I used scallions that my mom had grown. After washing them, lay the scallions down and cut just the top layer. (Im sorry I dont have a pic, but you know that scallions are hollow in the middle and so dont cut it all the way through) You want to be able to open it up so that it is flat. Now that we understand that, take your knife and slice it into little strips on the longest side. They will curl naturally but if the need some encouragement, you can curl them your self.\nNow just arrange your flower and leaves however and wherever you want.",
+"decomposition": [
+"Wash and prepare a sweet pepper for decoration by holding it upside down (stem down).",
+"Use a paring knife to cut petal shapes from the pepper without cutting all the way through, leaving the center intact.",
+"Bend the cut petals outward and downward to reveal the pepper's center.",
+"Wash scallions and, without cutting all the way through, open them so they lay flat.",
+"Slice the flattened scallions into long thin strips; they will curl naturally to form leaves.",
+"Arrange the pepper petals and scallion strips on the plated tofu as a decorative flower and leaves."
+]
+}
+]
+}
