@@ -1,4 +1,0 @@
-Explore any three different tool settings with AI (LLM based) and classical method. Record the two tool
-alternatives in each setting and the energy difference. [6 points]
-b) Question: what is the average energy difference across the three settings you checked? Which approach
-(LLM or classical) is higher on an average and by how much? .
