@@ -1,3 +1,36 @@
+name: Fix notebooks metadata.widgets
+
+on:
+  push:
+    paths:
+      - "**/*.ipynb"
+  workflow_dispatch:
+
+jobs:
+  fix-notebooks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install nbformat
+        run: python -m pip install --upgrade pip nbformat
+
+      - name: Show repo tree (for debugging)
+        run: |
+          echo "PWD: $(pwd)"
+          ls -la
+          echo "Notebooks found:"
+          find . -maxdepth 4 -type f -name "*.ipynb" -print || true
+
       - name: Fix notebooks (add missing widget state)
         id: fix
         run: |
@@ -10,12 +43,13 @@ from pathlib import Path
 
 def main():
     changed_any = False
-    # Look specifically in ProjectB, but also check repo for ipynb files
+
+    # Collect notebooks in ProjectB first, then any other notebooks
     notebooks = list(Path('ProjectB').rglob('*.ipynb'))
-    # fallback: discover other notebooks (avoid duplicating ProjectB entries)
     for p in Path('.').rglob('*.ipynb'):
         if 'ProjectB' not in str(p):
             notebooks.append(p)
+
     # Deduplicate
     seen = set()
     uniq = []
@@ -42,6 +76,7 @@ def main():
             nb = nbformat.read(str(p), as_version=nbformat.NO_CONVERT)
             widgets = nb.metadata.get("widgets")
             changed = False
+
             if widgets is None:
                 print("  no metadata.widgets found for", p)
             elif isinstance(widgets, list):
@@ -51,7 +86,6 @@ def main():
                         changed = True
                 nb.metadata["widgets"] = widgets
             elif isinstance(widgets, dict):
-                # handle mapping case
                 if "application/vnd.jupyter.widget-state+json" in widgets:
                     mapping = widgets["application/vnd.jupyter.widget-state+json"]
                     for k, v in mapping.items():
@@ -87,3 +121,32 @@ if __name__ == '__main__':
 PY
 
           python fix_notebooks.py
+
+      - name: Show git status & diff
+        run: |
+          git status --porcelain
+          echo "---- Unstaged diff (if any) ----"
+          git --no-pager diff || true
+
+      - name: Commit and push fixes (if any)
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          # commit only if there are staged changes
+          if ! git diff --cached --quiet; then
+            git commit -m "ci: fix notebook metadata.widgets missing state" || true
+            git push || echo "Push failed (branch protection or permission). Download artifact and apply manually."
+          else
+            echo "No changes to commit"
+
+      - name: Upload fixed notebooks (artifact)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fixed-notebooks
+          path: |
+            ProjectB/**/*.ipynb
+            **/*.ipynb.bak
+            **/*.ipynb
