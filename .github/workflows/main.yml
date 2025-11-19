@@ -1,66 +1,136 @@
 name: Fix notebooks metadata.widgets
+
 on:
   push:
     paths:
+      - "ProjectB/**.ipynb"
       - "**/*.ipynb"
   workflow_dispatch:
 
 jobs:
   fix-notebooks:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
         with:
           persist-credentials: true
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
+
+      - name: Show repo tree (top)
+        run: |
+          echo "Working dir: $(pwd)"
+          ls -la
+          echo "Find ipynb files (showing up to 500):"
+          find ProjectB -maxdepth 2 -type f -name "*.ipynb" -print || true
+          find . -maxdepth 4 -type f -name "*.ipynb" -print || true
+
       - name: Install nbformat
-        run: pip install nbformat
-      - name: Fix notebooks
+        run: python -m pip install --upgrade pip nbformat
+
+      - name: Fix notebooks (add missing widget state)
+        id: fix
         run: |
           python - <<'PY'
-import nbformat, shutil
+import nbformat, shutil, json, sys
 from pathlib import Path
-changed = False
-for p in Path('.').rglob('*.ipynb'):
+changed_any = False
+notebooks = list(Path('ProjectB').rglob('*.ipynb')) + [p for p in Path('.').rglob('*.ipynb') if 'ProjectB' in str(p)]
+# Deduplicate and keep unique
+seen = set()
+uniq = []
+for p in notebooks:
+    s = str(p.resolve())
+    if s not in seen:
+        seen.add(s)
+        uniq.append(p)
+notebooks = uniq
+
+print("Notebooks to check:", notebooks)
+for p in notebooks:
     try:
-        shutil.copy2(p, p.with_suffix(p.suffix + ".bak"))
+        print("Checking", p)
+        bak = p.with_suffix(p.suffix + ".bak")
+        shutil.copy2(p, bak)
         nb = nbformat.read(p, as_version=nbformat.NO_CONVERT)
         widgets = nb.metadata.get("widgets")
+        changed = False
         if widgets is None:
-            continue
-        if isinstance(widgets, list):
+            print(" no metadata.widgets found for", p)
+        elif isinstance(widgets, list):
             for w in widgets:
                 if isinstance(w, dict) and "state" not in w:
                     w["state"] = {}
                     changed = True
             nb.metadata["widgets"] = widgets
         elif isinstance(widgets, dict):
-            if "state" not in widgets:
-                nb.metadata["widgets"]["state"] = {}
-                changed = True
+            # handle the application/vnd.jupyter.widget-state+json mapping case
+            if "application/vnd.jupyter.widget-state+json" in widgets:
+                # mapping is usually fine; ensure each entry has a state dict
+                mapping = widgets["application/vnd.jupyter.widget-state+json"]
+                for k, v in mapping.items():
+                    if isinstance(v, dict) and "state" not in v:
+                        v["state"] = {}
+                        changed = True
+                nb.metadata["widgets"] = widgets
+            else:
+                if "state" not in widgets:
+                    nb.metadata["widgets"]["state"] = {}
+                    changed = True
         else:
+            # unknown shape: remove it
             nb.metadata.pop("widgets", None)
             changed = True
+
         if changed:
             nbformat.write(nb, str(p))
-            print("Fixed", p)
+            print(" Fixed:", p)
+            changed_any = True
+        else:
+            print(" No changes required for", p)
     except Exception as e:
-        print("Error", p, e)
-if not changed:
+        print("Error processing", p, e)
+if not changed_any:
     print("No notebooks needed changes.")
+sys.exit(0)
 PY
-      - name: Commit changes
+
+      - name: Show git status & diff (if any)
+        run: |
+          git status --porcelain
+          if ! git diff --quiet; then
+            echo "---- DIFF ----"
+            git --no-pager diff --staged || git --no-pager diff || true
+          else
+            echo "No changes to repo"
+          fi
+
+      - name: Commit and push fixes
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           if ! git diff --staged --quiet; then
-            git commit -m "ci: fix notebook metadata.widgets missing state"
-            git push
+            git commit -m "ci: fix notebook metadata.widgets missing state" || true
+            git push || echo "Push failed (likely a permissions issue)"
           else
             echo "No changes to commit"
-          fi
+
+      - name: Upload fixed notebooks
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fixed-notebooks
+          path: |
+            ProjectB/*.ipynb
+            **/*.ipynb
+            **/*.ipynb.bak
