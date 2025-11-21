@@ -1,0 +1,28 @@
+1. TC-identifier:
+
+TC1
+
+2. TC-name:
+
+PositiveSentiment-ShortReview
+
+3. TC-objective:
+
+Check if the model correctly identifies clear, short positive sentiment in a movie review.
+
+4. TC-input:
+
+A wonderful, charming movie — I loved it.
+
+5. TC-reference-output:
+
+Positive (true_label = 1)
+
+6. TC-harm-risk-info:
+
+HC1-incorrect-sentiment-label (false negative could mislead analysis of user satisfaction)
+
+7. TC-other-info:
+
+short positive
+Predictions → TF-IDF: 1, DistilFineTuned: 1, DistilBaseEmb: 1, GPT: 1
