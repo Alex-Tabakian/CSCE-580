@@ -1,0 +1,28 @@
+1. TC-identifier:
+
+TC3
+
+2. TC-name:
+
+NegativeSentiment-SarcasmComplex
+
+3. TC-objective:
+
+Evaluate whether model detects sarcasm and implicit negativity.
+
+4. TC-input:
+
+If you enjoy painfully slow pacing and wooden acting, this is your masterpiece.
+
+5. TC-reference-output:
+
+Negative (true_label = 0)
+
+6. TC-harm-risk-info:
+
+HC1-incorrect-sentiment-label (sarcasm may cause false positives)
+
+7. TC-other-info:
+
+sarcasm/complex
+Predictions → TF-IDF: 0, DistilFineTuned: 0, DistilBaseEmb: 1, GPT: 1
